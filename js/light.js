@@ -9,12 +9,11 @@ photo.onclick = () => {
         theme = "dark"
 
         document.querySelector("#theme").src = "img/moon.png";
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = "rgb(20, 20, 20)";
 
         document.body.style.color = "whitesmoke";
         document.getElementsByClassName("links").style.color = "whitesmoke";
-
-        document.getElementById("image").style.boxShadow = "4px 4px 14px rgba(255, 255, 255, 20%)";
+        
     } else if (theme == "dark") {
         theme = "light"
 
@@ -23,7 +22,5 @@ photo.onclick = () => {
 
         document.body.style.color = "black";
         document.getElementsByClassName("links").style.color = "black"
-
-        document.getElementById("image").style.boxShadow = "4px 4px 14px rgba(0, 0, 0, 25%)";
     }
 }
